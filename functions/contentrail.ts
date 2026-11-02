@@ -65,6 +65,10 @@ export const onRequest: PagesFunction<Env> = async (context) => {
           },
         };
 
+  const allowedSubjects = passwordReady
+    ? [`password:${env.CONTENTRAIL_ADMIN_USERNAME!.trim()}`]
+    : undefined;
+
   const handler = createPagesSiteHandler({
     siteId: env.CONTENTRAIL_SITE_ID,
     authenticator,
@@ -74,6 +78,7 @@ export const onRequest: PagesFunction<Env> = async (context) => {
         [env.CONTENTRAIL_SITE_ID]: {
           destinationRef: "git:allowlisted",
           permissions: ["read", "publish", "status", "rollback", "validate"],
+          ...(allowedSubjects !== undefined ? { allowedSubjects } : {}),
         },
       },
     }),
