@@ -11,11 +11,11 @@
     "predev": "npm run admin:build"
   },
   "dependencies": {
-    "@contentrail/cloudflare": "^0.2.3",
-    "@contentrail/core": "^0.2.3",
-    "@contentrail/editor": "^0.2.3",
-    "@contentrail/publisher": "^0.2.3",
-    "@contentrail/reader": "^0.2.3",
+    "@contentrail/cloudflare": "^0.2.4",
+    "@contentrail/core": "^0.2.4",
+    "@contentrail/editor": "^0.2.4",
+    "@contentrail/publisher": "^0.2.4",
+    "@contentrail/reader": "^0.2.4",
     "next": "16.4.3",
     "preact": "^10.29.8",
     "react": "19.3.0",
