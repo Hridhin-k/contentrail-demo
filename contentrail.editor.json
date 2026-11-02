@@ -1,0 +1,45 @@
+{
+  "collections": [
+    {
+      "name": "articles",
+      "label": "Articles",
+      "titleField": "title",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Title",
+          "widget": "text",
+          "required": true,
+          "order": 10
+        },
+        {
+          "name": "slug",
+          "label": "Slug",
+          "widget": "text",
+          "required": true,
+          "order": 20
+        },
+        {
+          "name": "published",
+          "label": "Published",
+          "widget": "boolean",
+          "order": 30
+        },
+        {
+          "name": "summary",
+          "label": "Summary",
+          "widget": "textarea",
+          "required": true,
+          "order": 40
+        },
+        {
+          "name": "body",
+          "label": "Body",
+          "widget": "textarea",
+          "required": true,
+          "order": 50
+        }
+      ]
+    }
+  ]
+}

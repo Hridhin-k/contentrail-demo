@@ -4,21 +4,32 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "vite build --config vite.admin.config.mjs && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "admin:build": "vite build --config vite.admin.config.mjs",
+    "predev": "npm run admin:build"
   },
   "dependencies": {
+    "@contentrail/cloudflare": "^0.2.3",
+    "@contentrail/core": "^0.2.3",
+    "@contentrail/editor": "^0.2.3",
+    "@contentrail/publisher": "^0.2.3",
+    "@contentrail/reader": "^0.2.3",
     "next": "16.4.3",
+    "preact": "^10.29.8",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@contentrail/cli": "^0.2.3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.3",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vite": "^8.3.5"
   }
 }

@@ -1,0 +1,10 @@
+{
+  "contentRoot": "content",
+  "framework": "next",
+  "collections": "content/config.ts",
+  "buildScript": "build",
+  "admin": {
+    "path": "/admin"
+  },
+  "editorConfig": "contentrail.editor.json"
+}
