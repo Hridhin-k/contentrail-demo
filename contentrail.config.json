@@ -3,8 +3,20 @@
   "framework": "next",
   "collections": "content/config.ts",
   "buildScript": "build",
+  "editorConfig": "contentrail.editor.json",
   "admin": {
     "path": "/admin"
   },
-  "editorConfig": "contentrail.editor.json"
+  "git": {
+    "owner": "Hridhin-k",
+    "repo": "contentrail-demo",
+    "branch": "main"
+  },
+  "cloudflare": {
+    "accountId": "e8658c0353d14844bc8ba4878e1e630d",
+    "projectName": "contentrail-demo",
+    "productionBranch": "main",
+    "buildCommand": "npm run build",
+    "destinationDir": "out"
+  }
 }
